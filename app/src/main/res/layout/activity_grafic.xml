@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    tools:context=".activity_grafic">
+
+
+    <Button
+        android:id="@+id/btn_mes"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:background="@color/light_white"
+        android:text="Mes"
+        android:textColor="@color/light_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <Button
+        android:id="@+id/btn_ingresos"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:background="@color/light_black"
+        android:text="Año"
+        android:textColor="@color/light_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <ImageButton
+        android:id="@+id/img_inicio"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:contentDescription="@string/des_inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:src="@drawable/start_sketch"
+
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txt_inicio"
+        android:layout_width="50dp"
+        android:layout_height="23dp"
+        android:text="@string/des_inicio"
+
+        android:textColor="@color/white"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <ImageButton
+        android:id="@+id/img_grafica"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/start_grafic"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/des_grafica"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"
+
+        app:tint="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/txt_grafica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/des_grafica"
+
+        android:textColor="@color/red"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <ImageButton
+        android:id="@+id/img_añadir"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:contentDescription="@string/des_añadir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        android:scaleType="fitCenter"
+        android:background="@drawable/add_circle"
+        android:src="@drawable/add_circle"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

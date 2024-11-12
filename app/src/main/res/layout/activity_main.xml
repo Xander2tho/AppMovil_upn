@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/table_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/Gastos_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="40dp"
+                android:text="@string/txt_Gastos"
+                android:textColor="@color/light_white" />
+
+            <TextView
+                android:id="@+id/Ingresos_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="40dp"
+                android:text="@string/txt_Ingresos"
+                android:textColor="@color/light_white" />
+
+            <TextView
+                android:id="@+id/Saldo_txt"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:text="@string/txt_SaldoActual"
+                android:textColor="@color/light_white" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_principal"
+        android:textColor="@color/white"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/int_TotalGastos"
+        android:layout_width="97dp"
+        android:layout_height="60dp"
+        android:text="@string/txt_00"
+        android:textColor="@color/light_white"
+        android:textSize="30sp"
+        android:paddingTop="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/int_TotalIngresos"
+        android:layout_width="97dp"
+        android:layout_height="60dp"
+        android:text="@string/txt_00"
+        android:textColor="@color/light_white"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/int_TotalSaldo"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="6sp"
+        android:text="@string/txt_00"
+        android:textColor="@color/light_white"
+        android:textSize="30sp"
+        android:gravity="right"
+        android:paddingTop="9dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/img_añadir"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:contentDescription="@string/des_añadir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        android:scaleType="fitCenter"
+        android:background="@drawable/add_circle"
+        android:src="@drawable/add_circle"/>
+
+
+    <ImageButton
+        android:id="@+id/img_grafica"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/start_grafic"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/des_grafica"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"
+
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txt_grafica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/des_grafica"
+
+        android:textColor="@color/white"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <ImageButton
+        android:id="@+id/img_inicio"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:contentDescription="@string/des_inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:src="@drawable/start_sketch"
+
+        app:tint="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/txt_inicio"
+        android:layout_width="50dp"
+        android:layout_height="23dp"
+        android:text="@string/des_inicio"
+
+        android:textColor="@color/red"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <ListView
+        android:layout_width="417dp"
+        android:layout_height="466dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="4dp"
+        android:id="@+id/Lista_Gastos_Consumos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
